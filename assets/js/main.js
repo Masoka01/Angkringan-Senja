@@ -29,16 +29,40 @@ const scrollActive = () => {
       sectionTop = current.offsetTop - 58,
       sectionId = current.getAttribute("id"),
       sectionsClass = document.querySelector(
-        ".nav__menu a[href*=" + sectionId + "]"
+        ".nav__menu a[href*='" + sectionId + "']"
       );
 
     if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
-      sectionsClass.classList.add("active-link");
+      if (sectionsClass) {
+        sectionsClass.classList.add("active-link");
+      }
     } else {
-      sectionsClass.classList.remove("active-link");
+      if (sectionsClass) {
+        sectionsClass.classList.remove("active-link");
+      }
     }
   });
 };
 window.addEventListener("scroll", scrollActive);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
+/*=============== PRODUCTS ACTIVE ===============*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollButton = document.querySelector(".products__button");
+  const targetElement = document.getElementById("scrollToElement");
+
+  if (scrollButton && targetElement) {
+    // Periksa apakah elemen ditemukan
+    scrollButton.addEventListener("click", function () {
+      if (targetElement.style.display === "none") {
+        targetElement.style.display = "grid"; // Tampilkan elemen
+        targetElement.classList.add("visible"); // Tambahkan kelas "visible" untuk menerapkan animasi
+      } else {
+        targetElement.style.display = "none"; // Sembunyikan elemen
+        targetElement.classList.remove("visible"); // Hapus kelas "visible"
+      }
+    });
+  }
+});

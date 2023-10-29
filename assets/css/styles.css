@@ -63,6 +63,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -70,6 +71,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--white-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 ul {
@@ -350,13 +352,12 @@ img {
 }
 
 .products__content {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   gap: 3rem 4rem;
 }
 
-.products__img {
+  .products__img {
   width: 120px;
   filter: drop-shadow(0 4px 16px hsl(12, 32%, 16%));
   margin-bottom: 1.5rem;
@@ -653,4 +654,3 @@ img {
 .show-scroll {
   bottom: 7rem;
 }
-

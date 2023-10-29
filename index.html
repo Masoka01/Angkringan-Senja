@@ -14,6 +14,9 @@
   <!--=============== CSS ===============-->
   <link rel="stylesheet" href="assets/css/styles.css">
 
+  <!--=============== AOS ===============-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <title>Angkringan Senja</title>
 </head>
 
@@ -68,27 +71,27 @@
     <section class="home section" id="home">
       <div class="home__container container grid">
         <div class="home__data">
-          <h3 class="home__subtitle">
+          <h3 class="home__subtitle" data-aos="zoom-in" data-aos-duration="1000">
             EXCEPTIONAL QUALITY
           </h3>
 
-          <h1 class="home__title">
+          <h1 class="home__title" data-aos="fade-right" data-aos-duration="1000">
             Yuk jajan di <br>
             Angkringan
 
             <img src="assets/img/home-sate-title.png" alt="home image ">
           </h1>
 
-          <p class="home__description">
+          <p class="home__description" data-aos="fade-left" data-aos-duration="1500">
             Yuk, ke angkringan! Nikmati hidangan khas dengan harga terjangkau dan suasana santai yang penuh kenangan.
             Jangan lewatkan!
           </p>
 
-          <a href="#" class="button">
+          <a href="javascript:void(0)" class="button" data-aos="zoom-in" data-aos-duration="1000">
             Get Started <i class="ri-arrow-right-s-line"></i>
           </a>
 
-          <img src="assets/img/home-teh.png" alt="home image" class="home__img">
+          <img src="assets/img/home-teh.png" alt="home image" class="home__img" data-aos="zoom-in" data-aos-duration="1000">
         </div>
       </div>
     </section>
@@ -98,17 +101,17 @@
       <div class="products__bg section">
         <div class="products__container container grid">
           <div class="products__data">
-            <a href="#about" class="products__button">
+            <a href="javascript:void(0)" class="products__button" id="toggleButton" data-aos="zoom-in" data-aos-duration="1000">
               Scroll Down <i class="ri-arrow-down-s-line"></i>
             </a>
 
-            <p class="products__description">
+            <p class="products__description" data-aos="fade-right" data-aos-duration="1000">
               Kami mengundang Anda untuk menikmati pengalaman kuliner tak terlupakan di angkringan kami. Jelajahi
               beragam hidangan spesial yang siap memanjakan selera Anda. Selamat datang!
             </p>
           </div>
 
-          <div class="products__content">
+          <div class="products__content" id="scrollToElement" style="display: none;">
             <article class="products__card">
               <img src="assets/img/home-teh.png" alt="products image" class="products__img">
               <h3 class="products__name">Es Teh</h3>
@@ -142,17 +145,17 @@
       <div class="about__bg section">
         <div class="about__container container grid">
           <div class="about__data">
-            <h2 class="section__title">
+            <h2 class="section__title" data-aos="zoom-in" data-aos-duration="1000">
               Tentang Kami
             </h2>
 
-            <p class="about__description">
+            <p class="about__description" data-aos="fade-right" data-aos-duration="1500">
               Pilih Angkringan "Rasa Nusantara" untuk hidangan autentik Jawa, harga terjangkau, dan suasana santai.
               Nikmati nasi kucing, sate usus, tempe mendoan, gudangan, dan kopi Jawa yang harum.
             </p>
           </div>
 
-          <img src="assets/img/sate-usus.jpg" alt="about image" class="about__img">
+          <img src="assets/img/sate-usus.jpg" alt="about image" class="about__img" data-aos="zoom-in" data-aos-duration="1000">
         </div>
       </div>
     </section>
@@ -160,7 +163,7 @@
     <!--==================== MENU ====================-->
     <section class="menu" id="menu">
       <div class="menu__bg section">
-        <h2 class="section__title">
+        <h2 class="section__title" data-aos="zoom-in" data-aos-duration="1000">
           Ini adalah menu best seller kami.
         </h2>
 
@@ -176,10 +179,10 @@
                   Es Teh
                 </div>
 
-                <img src="assets/img/home-teh.png" alt="menu image" class="menu__img">
+                <img src="assets/img/home-teh.png" alt="menu image" class="menu__img" data-aos="fade-right" data-aos-duration="1000">
               </div>
 
-              <p class="menu__description">
+              <p class="menu__description" data-aos="fade-left" data-aos-duration="2000">
                 Es teh: Segar, rasa manis, penyegaran, pilihan variasi, minuman favorit.
               </p>
             </div>
@@ -190,10 +193,10 @@
                   Kopi
                 </div>
 
-                <img src="assets/img/kopi-panas.png" alt="menu image" class="menu__img">
+                <img src="assets/img/kopi-panas.png" alt="menu image" class="menu__img" data-aos="fade-left" data-aos-duration="1000">
               </div>
 
-              <p class="menu__description">
+              <p class="menu__description" data-aos="fade-right" data-aos-duration="2000">
                 Kopi: Kafein, rasa khas, minuman sosial, energi, variasi kustom, populer.
               </p>
             </div>
@@ -204,10 +207,10 @@
                   Mie
                 </div>
 
-                <img src="assets/img/mie-goreng.png" alt="menu image" class="menu__img">
+                <img src="assets/img/mie-goreng.png" alt="menu image" class="menu__img" data-aos="fade-right" data-aos-duration="1000">
               </div>
 
-              <p class="menu__description">
+              <p class="menu__description" data-aos="fade-left" data-aos-duration="2000">
                 Mie goreng: Rasa lezat, variasi kustom, harga terjangkau, populer di semua kalangan.
               </p>
             </div>
@@ -221,17 +224,17 @@
       <div class="testimonial__bg section">
         <div class="testimonial__container container grid">
           <div class="testimonial__data">
-            <h2 class="section__title">
+            <h2 class="section__title" data-aos="zoom-in" data-aos-duration="1000">
               Kopi adalah minuman terbaik di dunia
               pagi.
             </h2>
 
-            <span class="testimonial__name">
+            <span class="testimonial__name" data-aos="fade-right" data-aos-duration="1000">
               Asep
             </span>
           </div>
 
-          <img src="assets/img/testimonial-coffee.png" alt="testimonial image" class="testimonial__img">
+          <img src="assets/img/testimonial-coffee.png" alt="testimonial image" class="testimonial__img" data-aos="zoom-in" data-aos-duration="1000">
         </div>
       </div>
     </section>
@@ -245,12 +248,12 @@
       <div class="footer__container container grid">
         <div class="footer__data grid">
           <div>
-            <a href="#" class="footer__logo">
+            <a href="#" class="footer__logo" data-aos="fade-right" data-aos-duration="1000">
               <img src="assets/img/logo.png" alt="logo">
               Angkringan Senja
             </a>
 
-            <h3 class="footer__title">
+            <h3 class="footer__title" data-aos="fade-left" data-aos-duration="1000">
               Hubungi kami
             </h3>
           </div>
@@ -258,16 +261,16 @@
 
         <div class="footer__content grid">
           <div class="footer__social">
-            <a href="https://www.instagram.com/iammayoni" target="_blank" class="footer__social-link">
+            <a href="https://www.instagram.com/iammayoni" target="_blank" class="footer__social-link" data-aos="zoom-in" data-aos-duration="1000">
               <i class="ri-instagram-fill"></i>
             </a>
 
             <a href="https://web.facebook.com/profile.php?id=100094714286074" target="_blank"
-              class="footer__social-link">
+              class="footer__social-link" data-aos="zoom-in" data-aos-duration="1500">
               <i class="ri-facebook-circle-fill"></i>
             </a>
 
-            <a href="https://www.youtube.com/@masokatoramonline4602" target="_blank" class="footer__social-link">
+            <a href="https://www.youtube.com/@masokatoramonline4602" target="_blank" class="footer__social-link" data-aos="zoom-in" data-aos-duration="2000">
               <i class="ri-youtube-fill"></i>
             </a>
           </div>
@@ -287,6 +290,13 @@
 
   <!--=============== SCROLLREVEAL ===============-->
   <script src=""></script>
+
+  <!--=============== AOS ===============-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 
   <!--=============== MAIN JS ===============-->
   <script src="assets/js/main.js"></script>
